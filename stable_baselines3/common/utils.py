@@ -87,6 +87,7 @@ def get_schedule_fn(value_schedule: Union[Schedule, float, int]) -> Schedule:
     if isinstance(value_schedule, (float, int)):
         # Cast to float to avoid errors
         print("value_schedule :", value_schedule)
+        print("instance of value schedule :", type(value_schedule))
         value_schedule = constant_fn(float(value_schedule))
     else:
         assert callable(value_schedule)
