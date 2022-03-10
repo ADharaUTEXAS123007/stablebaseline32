@@ -95,7 +95,7 @@ def get_schedule_fn(value_schedule: Union[Schedule, float, int]) -> Schedule:
     else:
         print("value_schedule in else:", value_schedule)
         print("instance of value schedule in else :", type(value_schedule))
-        print(assert callable(value_schedule))
+        print(callable(value_schedule))
         assert callable(value_schedule)
     return value_schedule
 
