@@ -160,6 +160,7 @@ class PPO(OnPolicyAlgorithm):
         super(PPO, self)._setup_model()
 
         # Initialize schedules for policy/value clipping
+        print("self.clip_range :", self.clip_range)
         self.clip_range = get_schedule_fn(self.clip_range)
         if self.clip_range_vf is not None:
             if isinstance(self.clip_range_vf, (float, int)):
