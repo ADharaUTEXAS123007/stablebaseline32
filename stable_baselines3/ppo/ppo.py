@@ -147,6 +147,7 @@ class PPO(OnPolicyAlgorithm):
                 )
         self.batch_size = batch_size
         self.n_epochs = n_epochs
+        print("clip_range :", clip_range)
         self.clip_range = clip_range
         self.clip_range_vf = clip_range_vf
         self.normalize_advantage = normalize_advantage
