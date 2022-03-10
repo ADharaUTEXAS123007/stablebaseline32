@@ -84,6 +84,7 @@ def get_schedule_fn(value_schedule: Union[Schedule, float, int]) -> Schedule:
     """
     # If the passed schedule is a float
     # create a constant function
+    print("schedule schedule")
     if isinstance(value_schedule, (float, int)):
         # Cast to float to avoid errors
         print("value_schedule :", value_schedule)
